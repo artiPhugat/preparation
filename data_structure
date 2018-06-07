@@ -1,21 +1,69 @@
+Data Structure Vs Data Type
+A data structure is an abstract description of a way of organizing data to allow certain operations on it to be performed efficiently. For example, a binary tree is a data structure, as is a Fibonacci heap, AVL tree, or skiplist. Theoreticians describe data structures and prove their properties in order to show that certain algorithms or problems can be solved efficiently under certain assumptions.
+
+A data type is a (potentially infinite) class of concrete objects that all share some property. For example, "integer" is a data type containing all of the infinitely many integers, "string" is a data type containing all of the infinitely many strings, and "32-bit integer" is a data type containing all integers expressible in thirty-two bits.
+
+
+Our choice of data structure depends on a few factors:
+what needs to be stored
+cost of operations : time and space complexity
+memory usage
+ease of implementation (not the best strategy)
+
+Data Structure
+1. Array
+   Type : Linear
+   Pros:
+   Cons:
+   Application:
+   Operations: 
+
+2. Linked List
+
+
+3. Stack 
+  Type : Linear, Last In First Out
+  Pros:
+  Cons:
+   Application:
+      undo\redo operation in word processors, 
+      Expression evaluation and syntax parsing, many virtual machines like JVM are stack oriented.
+      function calls/recursion
+      undo in an editor
+      balanced parentheses (used in compiler)
+    Operations Supported: pop, push, is_empty?, top
+
+4. Queues - 
+    Type : Linear
+    Pros:
+    Cons:
+    Application:
+      Transport and operations research where various entities are stored and held to be processed later ie the queue performs       the function of a buffer.
+      Queue is often used in a scenario where there is a shared resource that is served some request, but the resource can           only handle one request at a time. In such a scenario it makes most sense to use the Queue Structure.The request the is       called first get served first.
+      ex1: Network Printer
+
+5. Priority queues - 
+    process scheduling in the kernel
+
+6. Trees - 
+    Type : hierarchical structure, recursive data structure.
+    Pros:
+    Cons:
+    Application: Parsers, Filesystem
+
+Radix tree - IP routing table
+
+BSP tree - 3D computer graphics
+
 Hash Table - used for fast data lookup - symbol table for compilers, database indexing, caches,Unique data representation.
 
 Trie - dictionary, such as one found on a mobile telephone for autocompletion and spell-checking.
 
 Suffix tree - fast full text searches used in most word processors.
 
-Stack - undo\redo operation in word processors, Expression evaluation and syntax parsing, many virtual machines like JVM are stack oriented.
-
-Queues - Transport and operations research where various entities are stored and held to be processed later ie the queue performs the function of a buffer.
-
-Priority queues - process scheduling in the kernel
-
-Trees - Parsers, Filesystem
-
-Radix tree - IP routing table
-
-BSP tree - 3D computer graphics
-
 Graphs - Connections/relations in social networking sites, Routing ,networks of communication, data organization etc.
 
 Heap - Dynamic memory allocation in lisp
+
+
+

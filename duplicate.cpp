@@ -3,14 +3,31 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-bool duplicate(int arr[], int n, int k)
+bool duplicate_within_k(int arr[], int n, int k)
+{
+    bool flag = false;
+    for(int i=0;i<n;i++)
+    {
+            for(int j=i+1;j<=k;j++)
+            {
+                    if(arr[i] == arr[j])
+                    {
+                        printf("duplicate element at distance :%d\n",j);
+                        flag = true;
+                    }
+            }
+    }
+    return flag;
+}
+
+bool duplicate_at_k(int arr[], int n, int k)
 {
         bool flag = false;
         for(int i=0;i<n;i++)
         {
                 if(arr[i] == arr[i+k])
                 {
-                        printf("duplicate elements\n");
+                        printf("duplicate element at k distance\n");
                         flag = true;
                 }
         }
@@ -19,7 +36,8 @@ bool duplicate(int arr[], int n, int k)
 
 int main()
 {
-        int arr[] = {1,4,3,1,2};
+        int arr[] = {1, 2, 3, 4, 1, 2, 3, 4};
         int size = sizeof(arr)/sizeof(arr[0]);
-        duplicate(arr, size, 2);
+        if(duplicate_within_k(arr, size, 3) == false)
+                        printf("no duplicate elements within k distance\n");
 }

@@ -1,0 +1,145 @@
+Problem Statements
+https://www.cdn.geeksforgeeks.org/find-maximum-sum-possible-equal-sum-three-stacks/
+https://www.geeksforgeeks.org/construct-array-pair-sum-array/
+https://www.geeksforgeeks.org/check-whether-bst-contains-dead-end-not/
+
+
+
+dbms:
+* difference between Rdbms and OBJdbms
+
+* types of schemas
+@ conceptual, logical, physical
+
+* role of primary and foreign keys in normalization
+
+* joins: inner, left outer, right outer, full outer, cross
+
+* pattern matching
+@ _ and % wildcard
+
+* diff TRUNCATE and DELETE
+@ DDL cmd vs DML cmd
+
+* indexing
+
+* clustered vs non-clustered indexes
+
+* ACID props
+
+* ER diagrams
+
+* degree of relationships
+
+* file processing vs dbms vs memory (with backup memory for persistance)
+
+* advanced db sys (disk + memory + optimization-algos for faster writes or faster reads)
+
+* concurrency control with locking
+
+* deadlocks and prevention-algos
+
+
+
+Algos:
+Some algo related questions ->
+Program to sort a single linked list containing only 0s, 1s and 2s.
+Modify the array by moving all the zeros to the end (right side). The order of other elements doesn’t matter.
+Let's say you have a list of N+1 integers between 1 and N. You know there's at least one duplicate, but there might be more. For example, if N=3, your list might be 3, 1, 1, 3 or it might be 1, 3, 2, 2. Print out a number that appears in the list more than once.    constraints -> 1. time complexity and space o(n) 2. time complexity less than o(n^2) and space complexity o(1) 3. read only list, less than o(n^2) time complexity and o(1) space complexity
+top/bottom view of a bst
+Queue implementation using stack
+Find the middle of a given linked list  
+
+Puzzels link ->
+        https://www.interviewbit.com/problems/prisoners-and-poison/
+
+        https://www.interviewbit.com/problems/monkeys-and-doors/
+
+        https://www.interviewbit.com/problems/fake-note/
+
+Easy
+1) http://www.geeksforgeeks.org/multiplying-variable-constant-without-using-multiplication-operator/
+2) http://www.geeksforgeeks.org/write-a-program-to-add-two-numbers-in-base-14/
+3) http://quiz.geeksforgeeks.org/construct-array-pair-sum-array/
+4) http://www.geeksforgeeks.org/find-maximum-sum-possible-equal-sum-three-stacks/
+5) Remove all rows and columns from a matrix in which a zero appears
+
+Medium
+1) http://www.geeksforgeeks.org/ugly-numbers/
+2) http://www.geeksforgeeks.org/check-whether-bst-contains-dead-end-not/
+3) Using a function that simulates a coin toss, simulate a die throw
+4) A number occurs greater than n/2 times in an array. Find it.
+
+Tough
+1) http://www.geeksforgeeks.org/distinct-strings-odd-even-changes-allowed/
+
+
+
+
+
+OS:
+
+
+
+
+
+
+
+Networking:
+
+
+
+
+Algo n puzzles:
+* min in rotated sorted array
+@ modified binary search
++ duplicates
+* add integers using linked list
+* permutations of characters
+* median in expanding list of numbers
+@ two heaps - 1) bigger elems 2) smaller elems. balance by shifting one element from larger to smaller
+* image rotation by 90 in place (random angles)
+* delete node from linked list
++ delete node address given instead of head
+* head of circular linked list without access to addresses (apis)
+* implement 3 stacks using 1 array
+* stack with o(1) push,pop,min
+* queue using two stack
++ using linked list
+* sort stack (use apis)
+* path calc in directed graphs (standard)
+* given two bit strings how to replace substring of first from i with second (smaller) one
+@ bit manipulation
+* combos of 8 queens in chess
+* search in 2d matrix (all rows and columns are sorted)
+@ binary
+* primary and secondary sorting
+* most fit line given graph
++ most lines intersected 
+
+Conditions for deadlock
+1. Mutual Exclusion
+2. Hold and wait
+3. No preemption
+4. Circular wait
+
+Thread synchronisation
+Mutexes and semaphores
+How will you ensure thread A spawned first finishes before B which finishes before C always i.e, B is never running when A is.
+Semaphore release when A ends and acquire when B starts
+
+Allocate memory for 2d array
+Rows (pointers) + rows*cols (data) malloc
+
+Virtual memory, page fault
+
+Denormalization of rdbms
+
+Joins: inner, left outer, right outer, full outer
+
+Bash like autocomplete
+
+Shallow copy vs deep copy
+
+Hash map vs STL map
+STL map stores keys in sorted order, hence logN lookups

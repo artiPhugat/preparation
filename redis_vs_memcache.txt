@@ -1,0 +1,38 @@
+Redis vs Memcache
+https://www.linkedin.com/pulse/memcached-vs-redis-which-one-pick-ranjeet-vimal/
+
+While designing any caching system we consider following points:
+* Read/write speed.
+* Memory usage.
+* Disk I/O dumping.
+* Scaling.
+
+
+Redis
+Redis is In-memory data structure store, used as database, cache and message broker.
+NoSQL family
+key-value data model
+data structure server.
+
+
+Memcached is a volatile in-memory key/value store
+
+Why Memcached?
+Memcached could be preferable when caching relatively small and static data, such as HTML code fragments.
+internal memory management, is more efficient in the simplest use cases because it consumes comparatively less memory resources for metadata.
+Scaling 
+Another scenario in which Memcached has an advantage over Redis is in scaling. Because Memcached is multithreaded, you can easily scale up by giving it more computational resources.
+Memcached does not support replication.
+Memcached is very good to handle high traffic websites. It can read lots of information at a time and give you back at a great response time.
+
+Disadvantage : Memcached's memory management efficiency diminishes quickly when data size is dynamic
+Also, large data sets often involve serialized data, which always requires more space to store. 
+If you are using Memcached then data is lost with a restart and rebuilding cache is a costly process.
+Memcached's data eviction mechanism employs a Least Recently Used algorithm and somewhat arbitrarily evicts data that's similar in size to the new data.
+
+
+
+Why Redis?
+Because of its data structures ( Stores data in a variety of formats: list, array, sets and sorted sets )
+Caches employ a mechanism called data eviction to make room for new data by deleting old data from memory.
+
